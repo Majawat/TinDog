@@ -1,10 +1,20 @@
+:root {
+  --text: #17140c;
+  --darkText: #F0F0F0;
+  --background: #f4f1eb;
+  --primary: #f7a400;
+  --secondary: #f8e1b5;
+  --accent: #8914c8;
+  --accentHover: var(--primary);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 p {
-  color: #8f8f8f;
+  color: var(--text);
 }
 
 /* Headings */
@@ -26,13 +36,13 @@ p {
 }
 
 /* Section */
-.colored-section{
-  background-color:#ff4c68;
-  color:#fff
+.colored-section {
+  background-color: var(--primary);
+  color: var(--darkText);
 }
 
-.white-section{
-  background-color:white;
+.white-section {
+  background-color: var(--background);
 }
 
 /* Navigation Bar */
@@ -80,17 +90,17 @@ p {
 }
 
 .feature-icon {
-  color: #ff4c68;
+  color: var(--accent);
   font-size: 5rem;
   margin-bottom: 1rem;
 }
 
 .feature-icon:hover {
-  color: #ef8172;
+  color: var(--accentHover);
 }
 
 .feature-title {
-  color: #000;
+  color: var(--text);
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.5;
@@ -98,7 +108,8 @@ p {
 
 /* Testimonials Section */
 #testimonials {
-  background-color: #ef8172;
+  background-color: var(--primary);
+  color: var(--Text)
 }
 
 .testimonial-text {
@@ -115,7 +126,7 @@ p {
 
 /* Press Section */
 #press {
-  background-color: #ef8172;
+  background-color: var(--secondary);
   padding-bottom: 3%;
 }
 
@@ -141,7 +152,7 @@ p {
 
 /* Footer Section */
 #footer {
-  background-color: white;
+  background-color: var(--background);
 }
 
 .social-icon {
